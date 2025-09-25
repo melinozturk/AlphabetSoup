@@ -5,8 +5,8 @@ public class Soup {
 
     //this is a constructor it sets the instance variables (more on this later in the year)
     public Soup(){
-        letters ="";
-        company = "none";
+        letters ="abcdefghijklmnopqrstuvwxyz";
+        company = "alphabet soup™";
     }
 
 
@@ -29,7 +29,7 @@ public class Soup {
 
     //adds a word to the pool of letters known as "letters"
     public void add(String word){
-
+        letters+=word;
     }
 
 
