@@ -5,7 +5,7 @@ public class Soup {
 
     //this is a constructor it sets the instance variables (more on this later in the year)
     public Soup(){
-        letters ="abcdefghijklmnopqrstuvwxyz";
+        letters ="";
         company = "alphabet soup™";
     }
 
@@ -35,14 +35,15 @@ public class Soup {
 
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
-        return 'a';
+        
+        return letters.charAt((int)(Math.random()*letters.length()));
     }
 
 
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
     public String companyCentered(){
-        return "";
+        return company.charAt();
     }
 
 
