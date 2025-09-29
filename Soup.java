@@ -1,3 +1,7 @@
+// Name: Melin Ozturk
+// Date: 9/27/2025
+// Description: This program will produce a soup that will only contain letters that spell out specific words in the hopes of subliminally influencing the customers for the company alphabet soup™. 
+
 public class Soup {
     //these are instance variables 
     private String letters;
@@ -29,21 +33,21 @@ public class Soup {
 
     //adds a word to the pool of letters known as "letters"
     public void add(String word){
-        letters+=word;
+        letters+=word;    // adds letters to words 
     }
 
 
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
         
-        return letters.charAt((int)(Math.random()*letters.length()));
+        return letters.charAt((int)(Math.random()*letters.length()));  // gets a random character from the word or letters the user put in and returns
     }
 
 
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
-    public char companyCentered(){
-        return company.charAt((int)(Math.random()*company.length()/2));
+    public String companyCentered(){
+        return letters.substring(0, letters.length()/2) + company + letters.substring(letters.length()/2); // returns the first half of the letters first then adds the company name and then adds the second half of the letters so that it returns it as a whole with the company name centered in the middle of the letters. 
     }
 
 
@@ -56,6 +60,7 @@ public class Soup {
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
     public void removeSome(int num){
+        
 
     }
 
